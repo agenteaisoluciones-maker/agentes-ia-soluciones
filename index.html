@@ -27,7 +27,7 @@
 <meta name="twitter:title" content="Asistentes de IA en WhatsApp 24/7 | Agente IA Soluciones">
 <meta name="twitter:description" content="Atención al cliente y ventas automatizadas con IA. Desde US$15/mes.">
 
-<!-- Fuente (paralela al resto del HTML) -->
+<!-- Fuente -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -35,16 +35,17 @@
 <style>
 :root {
   --fondo-oscuro: #111827;
-  --acento-principal: #8B5CF6; /* Violeta Eléctrico */
-  --acento-secundario: #14B8A6; /* Verde Menta Eléctrico */
-  --verde-whatsapp: #25D366; /* Se mantiene para el botón */
-  --fondo-claro: #FAF9F5; /* Blanco Cálido */
+  --acento-principal: #8B5CF6;
+  --acento-secundario: #14B8A6;
+  --verde-whatsapp: #25D366;
+  --fondo-claro: #FAF9F5;
   --fondo-gris: #F3F4F6;
   --texto-principal: #17171C;
   --texto-suave: #6B7280;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--texto-principal);line-height:1.6;background:#fff;}
 a{text-decoration:none;color:inherit;}
 h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-0.02em;}
@@ -52,10 +53,12 @@ h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-0.02em;}
 /* Hero */
 .hero{background:linear-gradient(135deg, var(--fondo-oscuro) 0%, #1F2937 60%, #374151 100%);color:#fff;padding:120px 24px 100px;text-align:center;position:relative;overflow:hidden;}
 .hero h1{font-size:clamp(2.2rem,6vw,4.2rem);max-width:900px;margin:0 auto 16px;}
-.hero p{font-size:1.1rem;opacity:.92;max-width:680px;margin:0 auto 36px;color: #D1D5DB;}
+.hero p{font-size:1.1rem;opacity:.92;max-width:680px;margin:0 auto 36px;color:#D1D5DB;}
 .btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;font-size:1rem;transition:all .2s;}
 .btn-whatsapp{background:var(--verde-whatsapp);color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.35);margin:0 8px 12px;}
+.btn-whatsapp:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,211,102,.45);}
 .btn-plan{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);margin:8px;}
+.btn-plan:hover{background:rgba(255,255,255,.2);}
 .btn:focus{outline:3px solid var(--acento-principal);outline-offset:3px;}
 .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,#fff,transparent);}
 
@@ -73,7 +76,8 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:48px;color:var(--fondo-oscur
 
 /* Solución */
 .solucion{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1000px;margin:0 auto;}
-.card-cap{background:#fff;border:1px solid #e8ecf0;border-radius:20px;padding:32px 24px;box-shadow:0 4px 16px rgba(0,0,0,.05);}
+.card-cap{background:#fff;border:1px solid #e8ecf0;border-radius:20px;padding:32px 24px;box-shadow:0 4px 16px rgba(0,0,0,.05);transition:transform .2s;}
+.card-cap:hover{transform:translateY(-4px);}
 .card-cap h3{font-size:1.15rem;margin-bottom:8px;color:var(--fondo-oscuro);}
 
 /* Beneficios */
@@ -109,6 +113,8 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:48px;color:var(--fondo-oscur
 .contacto{text-align:center;background:linear-gradient(135deg,var(--fondo-claro) 0%,#fff 60%);border-top:1px solid #e8ecf0;padding-top:120px;}
 .contacto-botones{display:flex;flex-direction:column;gap:16px;max-width:420px;margin:0 auto 32px;}
 .contacto-botones a{display:block;text-align:center;font-size:1.05rem;padding:18px 36px;}
+.btn-email{background:var(--fondo-oscuro);color:#fff;box-shadow:0 8px 24px rgba(17,24,39,.25);}
+.btn-email:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(17,24,39,.35);}
 
 /* Footer */
 footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80px;}
@@ -123,10 +129,11 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
 </head>
 <body>
 
+<!-- ========== HERO ========== -->
 <section class="hero">
   <h1>Tu Asistente de IA trabajando 24/7, sin descanso, sin excusas</h1>
   <p>Atendemos, calificamos y cerramos ventas por ti en WhatsApp, Instagram, Facebook y tu página web. Desde US$15 al mes.</p>
-  <a href="https://wa.me/5804244216192?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20asistente%20de%20IA%20para%20mi%20negocio"
+  <a href="https://wa.me/584244216192?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20asistente%20de%20IA%20para%20mi%20negocio"
      class="btn btn-whatsapp"
      target="_blank"
      rel="noopener"
@@ -164,6 +171,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== PROBLEMA ========== -->
 <section id="problema">
   <h2>¿Te suena familiar?</h2>
   <div class="bullets">
@@ -174,6 +182,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== SOLUCIÓN ========== -->
 <section id="solucion">
   <h2>Nosotros te damos un Asistente de IA que nunca duerme</h2>
   <p style="max-width:720px;margin:0 auto 36px;text-align:center;color:var(--texto-suave);">Diseñamos, entrenamos y configuramos asistentes de IA especializados en tu negocio. Responden en menos de 1 segundo, entienden el contexto, califican a tus clientes y cierran ventas.</p>
@@ -187,6 +196,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== BENEFICIOS ========== -->
 <section id="beneficios">
   <h2>Beneficios</h2>
   <div class="beneficios">
@@ -198,6 +208,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== CÓMO FUNCIONA ========== -->
 <section id="como-funciona">
   <h2>Cómo Funciona</h2>
   <div class="pasos">
@@ -208,6 +219,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== PLANES ========== -->
 <section id="planes">
   <h2>Planes y Precios</h2>
   <div class="planes">
@@ -224,7 +236,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
       </ul>
     </div>
     <div class="tarjeta featured">
-      <h3>PRO ⭐ MÁS POPULAR</h3>
+      <h3>PRO</h3>
       <p style="font-size:.9rem;color:#666;margin:-8px 0 14px;">Ideal para PYMES en crecimiento</p>
       <div class="precio">US$60<span style="font-size:1rem;color:#666;font-weight:500;">/mes</span></div>
       <ul>
@@ -251,6 +263,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   <p style="text-align:center;font-size:.9rem;color:#555;">Configuración inicial única: <strong>US$75</strong>. Sin contratos forzosos. Modelo flexible: suscripción + packs de uso.</p>
 </section>
 
+<!-- ========== CONFIANZA ========== -->
 <section id="confianza" class="confianza-box">
   <h2>Casos de Éxito y Confianza</h2>
   <p style="max-width:720px;margin:0 auto 28px;text-align:center;color:var(--texto-suave);">Soluciones de IA en WhatsApp ya han logrado resultados reales en Venezuela y Latinoamérica. El bot "Bruno" de NetUno resolvió el 84% de interacciones por IA. El asistente venezolano "Panita" ya opera con empresas locales. Tu negocio también puede lograrlo.</p>
@@ -261,6 +274,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== FAQ ========== -->
 <section id="faq">
   <h2>Preguntas Frecuentes</h2>
   <div class="faq">
@@ -273,12 +287,13 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </div>
 </section>
 
+<!-- ========== CONTACTO (SIN FORMULARIO) ========== -->
 <section id="contacto" class="contacto">
   <h2>Empieza hoy. Tu asistente puede estar funcionando en 48 horas.</h2>
   <p style="max-width:600px;margin:0 auto 36px;text-align:center;color:var(--texto-suave);font-size:1.05rem;">Escríbenos por WhatsApp para una respuesta inmediata, o envíanos un correo si prefieres detallar tu consulta.</p>
 
   <div class="contacto-botones">
-    <a href="https://wa.me/5804244216192?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20asistente%20de%20IA%20para%20mi%20negocio"
+    <a href="https://wa.me/584244216192?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20asistente%20de%20IA%20para%20mi%20negocio"
        class="btn btn-whatsapp"
        target="_blank"
        rel="noopener"
@@ -287,8 +302,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
     </a>
 
     <a href="mailto:agenteaisoluciones@gmail.com?subject=Consulta%20sobre%20asistente%20de%20IA&body=Hola%2C%20estoy%20interesado%20en%20un%20asistente%20de%20IA%20para%20mi%20negocio.%0A%0AMi%20negocio%20se%20dedica%20a%3A%20%0AMis%20necesidades%20principales%20son%3A%20"
-       class="btn"
-       style="background:var(--fondo-oscuro);color:#fff;box-shadow:0 8px 24px rgba(17,24,39,.25);"
+       class="btn btn-email"
        aria-label="Enviar correo electrónico">
       ✉️ Enviar correo electrónico
     </a>
@@ -299,6 +313,7 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
   </p>
 </section>
 
+<!-- ========== FOOTER ========== -->
 <footer>
   <div class="footer-inner">
     <div>
@@ -312,9 +327,10 @@ footer{background:var(--fondo-oscuro);color:#fff;padding:48px 24px;margin-top:80
       <a href="#contacto">Contacto</a>
     </div>
     <div>
-      <a href="https://wa.me/5804244216192" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/584244216192" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 </footer>
+
 </body>
 </html>
