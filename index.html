@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asistentes de IA en WhatsApp 24/7 para Empresas | Agente IA Soluciones</title>
+<meta name="description" content="Atención al cliente, ventas y citas automatizadas con Inteligencia Artificial. Desde US$15/mes. Sin contratos. Para PYMES en Venezuela y Latinoamérica.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+:root{--azul:#0A2540;--verde:#25D366;--morado:#7C3AED;--gris:#F5F7FA;--texto:#1a1a2e;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--texto);line-height:1.55;background:#fff;}
+a{text-decoration:none;color:inherit;}
+h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-0.02em;}
+.hero{background:linear-gradient(135deg,var(--azul) 0%,#0f3a6e 60%,#143d6e 100%);color:#fff;padding:120px 24px 100px;text-align:center;position:relative;overflow:hidden;}
+.hero h1{font-size:clamp(2.2rem,6vw,4.2rem);max-width:900px;margin:0 auto 16px;}
+.hero p{font-size:1.1rem;opacity:.92;max-width:680px;margin:0 auto 36px;}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;font-size:1rem;transition:all .2s;}
+.btn-whatsapp{background:var(--verde);color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.35);margin:0 8px 12px;}
+.btn-plan{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);margin:8px;}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to top,#fff,transparent);}
+.mock{max-width:540px;margin:40px auto 0;border-radius:24px;box-shadow:0 24px 48px rgba(10,37,64,.18);background:#fff;border:1px solid #e8ecf0;overflow:hidden;display:block;}
+.mock img{width:100%;display:block;}
+section{padding:90px 24px;max-width:1100px;margin:0 auto;}
+h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:48px;color:var(--azul);text-align:center;}
+.bullets{display:grid;gap:16px;max-width:860px;margin:0 auto;}
+.bullet{background:var(--gris);padding:24px 28px;border-radius:16px;border-left:4px solid var(--morado);font-size:1.05rem;}
+.solucion{display:grid;md-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1000px;margin:0 auto;}
+.card-cap{background:#fff;border:1px solid #e8ecf0;border-radius:20px;padding:32px 24px;box-shadow:0 4px 16px rgba(10,37,64,.05);}
+.card-cap h3{font-size:1.15rem;margin-bottom:8px;color:var(--azul);}
+.planes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1000px;margin:0 auto 24px;}
+.tarjeta{background:#fff;border:1px solid #e8ecf0;border-radius:24px;padding:32px 28px;box-shadow:0 10px 30px rgba(10,37,64,.06);position:relative;transition:transform .2s;}
+.tarjeta:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(10,37,64,.12);}
+.tarjeta.featured{border-color:var(--morado);box-shadow:0 16px 40px rgba(124,58,237,.15);}
+.tarjeta.featured::before{content:'⭐ MÁS POPULAR';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--morado);color:#fff;padding:4px 14px;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.05em;}
+.tarjeta h3{font-size:1.25rem;color:var(--azul);margin-bottom:6px;}
+.precio{font-size:2.2rem;font-weight:800;color:var(--morado);margin:12px 0 16px;}
+.tarjeta ul{list-style:none;margin-top:12px;}
+.tarjeta li{padding:6px 0;font-size:.92rem;color:#333;}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;max-width:1000px;margin:0 auto;}
+.paso{background:linear-gradient(135deg,var(--gris) 0%,#fff 100%);border:1px solid #e8ecf0;border-radius:20px;padding:28px 24px;text-align:center;}
+.paso h4{font-size:1.05rem;color:var(--morado);margin-bottom:8px;}
+.beneficios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1000px;margin:0 auto;}
+.beneficio{display:flex;align-items:flex-start;gap:14px;background:var(--gris);padding:24px 20px;border-radius:16px;border-left:4px solid var(--verde);}
+.beneficio h4{font-size:1.05rem;color:var(--azul);margin-bottom:4px;}
+.faq{max-width:800px;margin:0 auto;display:grid;gap:12px;}
+.faq-item{border:1px solid #e8ecf0;border-radius:16px;padding:20px 24px;background:#fff;}
+.faq-item h4{font-size:1rem;color:var(--azul);margin-bottom:6px;}
+.contacto{text-align:center;background:linear-gradient(135deg,var(--gris) 0%,#fff 60%);border-top:1px solid #e8ecf0;padding-top:120px;}
+.contacto .btn-whatsapp{font-size:1.1rem;padding:18px 36px;margin-bottom:24px;}
+.form{max-width:480px;margin:0 auto;text-align:left;background:#fff;padding:28px;border-radius:20px;border:1px solid #e8ecf0;box-shadow:0 8px 30px rgba(10,37,64,.05);}
+.form input,.form textarea{width:100%;padding:12px 14px;margin:8px 0 16px;border:1px solid #d1d5db;border-radius:10px;font-family:inherit;font-size:.95rem;background:#fafafa;}
+.form button{width:100%;padding:14px;background:var(--azul);color:#fff;border:none;border-radius:999px;font-weight:700;font-size:1rem;cursor:pointer;transition:background .2s;}
+.form button:hover{background:#0f3466;}
+footer{background:var(--azul);color:#fff;padding:48px 24px;margin-top:80px;}
+.footer-inner{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+.footer-inner a{color:#a3b8d6;font-size:.85rem;margin:0 8px;}
+@media(min-width:768px){.solucion,.beneficios,.pasos{display:grid;grid-template-columns:repeat(3,1fr);}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Tu Asistente de IA trabajando 24/7, sin descanso, sin excusas</h1>
+<p>Atendemos, calificamos y cerramos ventas por ti en WhatsApp, Instagram, Facebook y tu página web. Desde US$15 al mes.</p>
+<a href="#" class="btn btn-whatsapp">Hablar por WhatsApp</a>
+<a href="#planes" class="btn btn-plan">Ver Planes</a>
+<div class="mock" aria-label="Mockup de conversación de WhatsApp con asistente de IA">
+<svg viewBox="0 0 540 320" xmlns="http://www.w3.org/2000/svg" style="background:#f0f2f5;display:block;width:100%;">
+<rect x="0" y="0" width="540" height="320" fill="#fff" rx="24" stroke="#e8ecf0" stroke-width="1"/>
+<rect x="24" y="24" width="492" height="36" rx="18" fill="#25D366"/>
+<text x="120" y="48" fill="#fff" font-family="Inter,sans-serif" font-size="14" font-weight="700">Asistente de Agente IA</text>
+<circle cx="40" cy="42" r="14" fill="#fff" opacity=".9"/>
+<rect x="48" y="30" width="10" height="24" rx="5" fill="#0A2540" opacity=".15"/>
+<rect x="40" y="280" width="320" height="28" rx="14" fill="#fff" stroke="#e8ecf0" stroke-width="1"/>
+<rect x="48" y="276" width="24" height="4" rx="2" fill="#25D366" opacity=".3"/>
+<g font-family="Inter,sans-serif" font-size="12" fill="#1a1a2e">
+<rect x="48" y="70" width="200" height="36" rx="12" fill="#fff" stroke="#e8ecf0" stroke-width="1"/>
+<text x="60" y="92">Hola, ¿tienen el plan Pro?</text>
+<rect x="290" y="70" width="200" height="36" rx="12" fill="#dcf8c6" stroke="#c5e1b5" stroke-width="1"/>
+<text x="300" y="92">¡Claro! El Pro incluye CRM,</text>
+<text x="300" y="106">cotizaciones y escalado humano.</text>
+<rect x="48" y="120" width="200" height="36" rx="12" fill="#fff" stroke="#e8ecf0" stroke-width="1"/>
+<text x="60" y="142">¿Cuánto cuesta?</text>
+<rect x="290" y="120" width="200" height="36" rx="12" fill="#dcf8c6" stroke="#c5e1b5" stroke-width="1"/>
+<text x="300" y="142">US$60/mes. Configuración: US$75.</text>
+<rect x="290" y="170" width="220" height="36" rx="12" fill="#dcf8c6" stroke="#c5e1b5" stroke-width="1"/>
+<text x="300" y="192">¿Te gustaría agendar una demo?</text>
+<rect x="48" y="220" width="200" height="36" rx="12" fill="#fff" stroke="#e8ecf0" stroke-width="1"/>
+<text x="60" y="242">Sí, mañana a las 10 am.</text>
+<rect x="290" y="220" width="220" height="36" rx="12" fill="#dcf8c6" stroke="#c5e1b5" stroke-width="1"/>
+<text x="300" y="242">¡Perfecto! Te confirmo en segundos.</text>
+</g>
+</svg>
+</div>
+</section>
+
+<section id="problema">
+<h2>¿Te suena familiar?</h2>
+<div class="bullets">
+<div class="bullet">"Pierdes clientes porque no respondes a tiempo"</div>
+<div class="bullet">"Pagas empleados que solo cubren 8 horas, no 24"</div>
+<div class="bullet">"Tus redes sociales generan mensajes que no se convierten en ventas"</div>
+<div class="bullet">"No tienes tiempo para responder las mismas preguntas todo el día"</div>
+</div>
+</section>
+
+<section id="solucion">
+<h2>Nosotros te damos un Asistente de IA que nunca duerme</h2>
+<p style="max-width:720px;margin:0 auto 36px;text-align:center;color:#555;">Diseñamos, entrenamos y configuramos asistentes de IA especializados en tu negocio. Responden en menos de 1 segundo, entienden el contexto, califican a tus clientes y cierran ventas.</p>
+<div class="solucion">
+<div class="card-cap"><h3>Atención al Cliente 24/7</h3><p>Responde consultas, quejas y dudas sin descanso. En WhatsApp, web y redes.</p></div>
+<div class="card-cap"><h3>Asistente Personal</h3><p>Organiza citas, envía recordatorios y gestiona tareas repetitivas por ti.</p></div>
+<div class="card-cap"><h3>Calificación de Leads</h3><p>Detecta quién está interesado y separa a los curiosos de los compradores.</p></div>
+<div class="card-cap"><h3>Cotizaciones Automáticas</h3><p>Envía precios, opciones y detalles del servicio inmediatamente.</p></div>
+<div class="card-cap"><h3>Agendamiento de Citas</h3><p>Sincroniza calendarios y confirma reuniones sin intervención humana.</p></div>
+<div class="card-cap"><h3>Cierre de Ventas y Cobros</h3><p>Envía enlaces de pago, confirma pedidos y realiza seguimiento post-venta.</p></div>
+</div>
+</section>
+
+<section id="planes">
+<h2>Planes y Precios</h2>
+<div class="planes">
+<div class="tarjeta">
+<h3>STARTER</h3>
+<p style="font-size:.9rem;color:#666;margin:-8px 0 14px;">Ideal para emprendedores y negocios que inician</p>
+<div class="precio">US$15<span style="font-size:1rem;color:#666;font-weight:500;">/mes</span></div>
+<ul>
+<li>1.000 respuestas al mes</li>
+<li>Asistente en WhatsApp</li>
+<li>Disponibilidad 24/7</li>
+<li>Respuestas en menos de 1 segundo</li>
+<li>Soporte en español</li>
+</ul>
+</div>
+<div class="tarjeta featured">
+<h3>PRO ⭐ MÁS POPULAR</h3>
+<p style="font-size:.9rem;color:#666;margin:-8px 0 14px;">Ideal para PYMES en crecimiento</p>
+<div class="precio">US$60<span style="font-size:1rem;color:#666;font-weight:500;">/mes</span></div>
+<ul>
+<li>5.000 respuestas al mes</li>
+<li>Integración con CRM</li>
+<li>Cotizaciones automáticas</li>
+<li>Escalado a humano cuando sea necesario</li>
+<li>Reportes de conversión</li>
+</ul>
+</div>
+<div class="tarjeta">
+<h3>ENTERPRISE</h3>
+<p style="font-size:.9rem;color:#666;margin:-8px 0 14px;">Ideal para empresas consolidadas y equipos comerciales</p>
+<div class="precio">US$150<span style="font-size:1rem;color:#666;font-weight:500;">/mes</span></div>
+<ul>
+<li>20.000+ respuestas al mes</li>
+<li>Multi-canal: WhatsApp, Facebook, Instagram y Web</li>
+<li>Análisis avanzado de conversión</li>
+<li>Entrenamiento personalizado con tu base de conocimiento</li>
+<li>Soporte prioritario</li>
+</ul>
+</div>
+</div>
+<p style="text-align:center;font-size:.9rem;color:#555;">Configuración inicial única: <strong>US$75</strong>. Sin contratos forzosos. Modelo flexible: suscripción + packs de uso.</p>
+</section>
+
+<section id="como-funciona">
+<h2>Cómo Funciona</h2>
+<div class="pasos">
+<div class="paso"><h4>Paso 1: Conversamos</h4><p>Analizamos tu negocio, objetivos y clientes.</p></div>
+<div class="paso"><h4>Paso 2: Diseñamos</h4><p>Creamos el flujo de conversación ideal para tu marca.</p></div>
+<div class="paso"><h4>Paso 3: Entrenamos</h4><p>Cargamos tu información, productos, precios y preguntas frecuentes.</p></div>
+<div class="paso"><h4>Paso 4: Activamos</h4><p>Tu asistente comienza a atender en 48 horas.</p></div>
+</div>
+</section>
+
+<section id="beneficios">
+<h2>Beneficios</h2>
+<div class="beneficios">
+<div class="beneficio"><h4>Ahorra hasta un 90%</h4><p>Comparación: USD 3.000/mes humano vs USD 15/mes bot.</p></div>
+<div class="beneficio"><h4>Respuesta instantánea</h4><p>Sin filas ni esperas. El cliente recibe atención inmediata.</p></div>
+<div class="beneficio"><h4>Español venezolano</h4><p>Soporte cercano. Entendemos tu mercado y tu lenguaje.</p></div>
+<div class="beneficio"><h4>Modelo flexible</h4><p>Sin ataduras. Cancela o cambia de plan cuando quieras.</p></div>
+<div class="beneficio"><h4>Métricas reales</h4><p>80% de reducción en tiempo de respuesta. Hasta 26% de conversión bot-cita.</p></div>
+</div>
+</section>
+
+<section id="confianza" style="background:var(--gris);border-radius:24px;padding:80px 24px;margin:0 auto 40px;max-width:1000px;">
+<h2>Casos de Éxito y Confianza</h2>
+<p style="max-width:720px;margin:0 auto 28px;text-align:center;color:#555;">Soluciones de IA en WhatsApp ya han logrado resultados reales en Venezuela y Latinoamérica. El bot "Bruno" de NetUno resolvió el 84% de interacciones por IA. El asistente venezolano "Panita" ya opera con empresas locales. Tu negocio también puede lograrlo.</p>
+<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:center;opacity:.8;">
+<span style="font-weight:800;color:var(--azul);font-size:1.2rem;">Meta</span>
+<span style="font-weight:800;color:var(--verde);font-size:1.2rem;">WhatsApp Business</span>
+<span style="font-weight:800;color:#E1306C;font-size:1.2rem;">Instagram</span>
+</div>
+</section>
+
+<section id="faq">
+<h2>Preguntas Frecuentes</h2>
+<div class="faq">
+<div class="faq-item"><h4>¿Necesito tener WhatsApp Business?</h4><p>Recomendado para una integración profesional, pero no obligatorio. También funcionamos con tu número personal.</p></div>
+<div class="faq-item"><h4>¿En cuánto tiempo se activa mi asistente?</h4><p>48 horas después de la configuración inicial. Si es urgente, activamos en menos de 24 horas.</p></div>
+<div class="faq-item"><h4>¿Puedo cancelar cuando quiera?</h4><p>Sí. Sin penalizaciones, sin contratos forzosos. Puedes pausar o cambiar de plan en cualquier momento.</p></div>
+<div class="faq-item"><h4>¿Mis datos están seguros?</h4><p>Sí. Usamos servidores cifrados y cumplimos con las políticas de Meta. Tu información nunca se comparte.</p></div>
+<div class="faq-item"><h4>¿Funciona si mi negocio es de servicios?</h4><p>Absolutamente. Especializado en citas, consultas, ventas de servicios, asesorías y más.</p></div>
+<div class="faq-item"><h4>¿Qué pasa si mi asistente no sabe una respuesta?</h4><p>Escala automáticamente a un humano. Tú decides cuándo y cómo intervenir.</p></div>
+</div>
+</section>
+
+<section id="contacto" class="contacto">
+<h2>Empieza hoy. Tu asistente puede estar funcionando en 48 horas.</h2>
+<a href="https://wa.me/TUNUMERO" class="btn btn-whatsapp" style="font-size:1.15rem;padding:18px 36px;">Escríbenos por WhatsApp</a>
+<div class="form">
+<form onsubmit="event.preventDefault(); this.innerHTML='<h3 style=color:#0A2540;>¡Gracias! Te escribiremos pronto.</h3>';">
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Teléfono">
+<textarea rows="3" placeholder="Cuéntanos sobre tu negocio o consulta" required></textarea>
+<button type="submit">Enviar solicitud</button>
+</form>
+</div>
+<p style="font-size:.85rem;color:#777;margin-top:16px;">Correo: <a href="mailto:agenteaisoluciones@gmail.com" style="color:var(--morado);font-weight:700;">agenteaisoluciones@gmail.com</a> | Venezuela</p>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div>
+<strong style="font-size:1.1rem;letter-spacing:-.02em;">Agente IA Soluciones</strong><br>
+<span style="opacity:.7;font-size:.85rem;">Asistentes de IA que venden por ti, 24/7.</span>
+</div>
+<div>
+<a href="#">Inicio</a>
+<a href="#planes">Planes</a>
+<a href="#faq">FAQ</a>
+<a href="#contacto">Contacto</a>
+</div>
+<div>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">WhatsApp</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
